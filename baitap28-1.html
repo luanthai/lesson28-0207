@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>bài tập 28 -1</title>
+	<style>
+		[class*="col-"]{
+				width: 100%;
+			}
+		.cot{
+			width: 98%;
+			min-height: 200px;
+			border: 1px solid red;
+			float: left;
+			margin-top: 10px;
+		}
+		img{width: 100%;}
+		img:hover{opacity: 0.4;}
+		@media only screen and (min-width: 600px){
+			/*for tablet*/
+			.col-3{width: 50%; float: left;}
+		}
+		@media only screen and (min-width: 700px){
+			.col-1{width: 8.3%;}
+			.col-2{width: 16.66%;}
+			.col-3{width: 25%;}
+			.col-4{width: 33.3%;}
+			.col-5{width: 41.66%;}
+			.col-6{width: 50%;}
+			.col-7{width: 58.3%;}
+			.col-8{width: 66.66%;}
+			.col-9{width: 75%;}
+			.col-10{width: 83.3%;}
+			.col-11{width: 91.66%;}
+			.col-12{width: 100%;}
+			.col-12:after{
+				content: "";
+				clear: both;
+				display: table;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrap" class="col-12">
+		<h1>PHOTOGRAPH GALLERY IMAGE...</h1>
+		<p>This is a place to show the photographs that people take...</p>
+		<div class="col-12">
+			<div class="col-3">
+				<div class="cot">
+					<img src="hinh3.jpg" alt="HINH">
+					<p>This is a place to show the photographs that people take...</p>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="cot">
+					<img src="hinh3.jpg" alt="HINH">
+					<p>This is a place to show the photographs that people take sjkdfk ksjhfk ashd ksfjk...</p>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="cot">
+					<img src="hinh3.jpg" alt="HINH">
+					<p>This is a place to show the photographs that people take...</p>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="cot">
+					<img src="hinh3.jpg" alt="HINH">
+					<p>This is a place to show the photographs that people take...</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p>This is a place to show the photographs that people take...</p>
+		</div>
+	</div>
+</body>
+</html>
